@@ -10,9 +10,5 @@ class LineItem < ApplicationRecord
     product.price_ru * quantity
     end
   end
-
-  #def total_quantity
-  
-  #end
   
 end

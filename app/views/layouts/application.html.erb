@@ -145,20 +145,20 @@
                         <li><a href="#">Homepage - with intro image</a></li>
                         <li><a href="#">Homepage - fullscreen slider <span class="badge badge-success">New</span></a></li>
                       </ul>
-                      <h5>Shop</h5>
+                      <h5><%= t('.shops') %></h5>
                       <ul>
-                        <li><a href="<%= gallery_path %>">Gallery</a></li>
-                        <li><a href="<%= catalog_path %>">Catalog</a></li>
-                        <li><a href="<%= products_path %>">Products</a></li>
-                        <li><a href="<%= products_path %>">Product details</a></li>
+                        <li><a href="<%= gallery_path %>"><%= t('.gallery') %></a></li>
+                        <li><a href="<%= catalog_path %>"><%= t('.catalog') %></a></li>
+                        <li><a href="<%= products_path %>"><%= t('.products') %></a></li>
+                        <li><a href="<%= products_path %>"><%= t('.prodetail') %></a></li>
                       </ul>
                     </div>
                  
                     <div class="col-sm-6 col-lg-3" id="cart">
-                      <h5>Order process</h5>
+                      <h5><%= t('.order_process') %></h5>
                       <ul>
-                        <li><a href="<%= products_path %>">Shopping cart</a></li>
-                        <li><a href="<%= new_order_path %>">Cart Checkout</a></li>
+                        <li><a href="<%= products_path %>"><%= t('.sh_cart') %></a></li>
+                        <li><a href="<%= new_order_path %>"><%= t('.checkout') %></a></li>
                       </ul>
                     </div>
                     <div class="col-sm-6 col-lg-3">

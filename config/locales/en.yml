@@ -32,6 +32,12 @@ en:
       shop: "Shop & Cart"
       prods: "Products"
       userarea: "User's Profile"
+      order_process: "Order process"
+      sh_cart: "Shopping cart"
+      checkout: "Cart checkout"
+      shops: "Shop"
+      prodetail: "Product details"
+      products: "Products"
   
   products:
     index:
@@ -227,6 +233,7 @@ en:
       thank: "Thank you for your recent order at Rkraftcomua.
              You ordered the following items:"
       separate: "We will send you a separate email when your order ships."
+      sum: "Total: "
     shipped:
       subject: "Your order is shipped. Please confirm the reception"
 
