@@ -38,7 +38,10 @@ en:
       shops: "Shop"
       prodetail: "Product details"
       products: "Products"
-  
+      sales: "Models"
+      favorites: "Prices"
+      inquiry: "Leave us an inquiry"
+
   products:
     index:
       title: "Products"
@@ -157,6 +160,8 @@ en:
       submit: "Submit"
       about: "About Us "
       about_p: "We develop and produce plastic packaging of any shape and complexity, for a wide range of goods, containers, lunch boxes, sushi boxes.  Our production is characterized by an individual approach, we can select the optimal form of packaging material, attractive and optimized design, with your company logo.  "
+      social: "Social"
+      map: "Map"
 
     acryllic:
       atitle: " Acryllic stands"

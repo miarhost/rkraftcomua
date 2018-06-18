@@ -88,9 +88,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="footer clearfix d-none d-lg-block">
-                  <h4 class="pull-right">Molded shelftalers</h4>
-                  <div class="buttons pull-left"><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-tags"></i> Sales</a><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-star-o"></i> Favourites</a><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-globe"></i> Brands</a></div>
+                 <div class="footer clearfix d-none d-lg-block">
+                  <h4 class="pull-right"><%= t('.acryllic') %></h4>
+                  <div class="buttons pull-left"><a href="<%= acryllic_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-tags"></i><%= t('.sales') %></a><a href="<%= catalog_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-star-o"></i><%= t('.favorites') %></a><a href="<%= products_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-globe"></i><%= t('.inquiry') %></a></div>
                 </div>
               </div>
             </div>
@@ -98,39 +98,39 @@
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
-                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="<%= asset_path 'rack.jpg' %>" alt="" class="img-fluid"></div>
+                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="<%= asset_path 'shelf11.png' %>" alt="" class="img-fluid"></div>
                     <div class="col-sm-4 col-lg-3">
-                      <h3>Catalog</h3>
+                      <h3><%= t('.catalog') %></h3>
                       <ul>
-                        <li><a href="#">Acryllic Stands</a></li>
-                        <li><a href="<%= racks_path %>">Metal Stands</a></li>
-                        <li><a href="#">Molded Displays</a></li>
-                        <li><a href="#">Clamshells</a></li>
+                        <li><a href="<%= gallery_path %>"><%= t('.gallery') %></a></li>
+                        <li><a href="<%= catalog_path %>"><%= t('.catalog') %></a></li>
+                        <li><a href="<%= products_path %>"><%= t('.products') %></a></li>
+                        <li><a href="<%= products_path %>"><%= t('.prodetail') %></a></li>
                       </ul>
                     </div>
                     <div class="col-sm-4 col-lg-3">
-                      <h3>Additional</h3>
+                      <h3><%= t('.contacts') %></h3>
                       <ul>
-                        <li><a href="#">POS clamshells</a></li>
-                        <li><a href="#">Blinks and Lighting</a></li>
-                        <li><a href="#">Shelftalkers</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="<%= contacts_path %>"><%= t('main.contacts.inqform') %></a></li>
+                        <li><a href="<%= contacts_path %>"><%= t('main.contacts.social') %></a></li>
+                        <li><a href="<%= contacts_path %>"><%= t('main.contacts.map') %></a></li>
+                        <li><a href="<%= home_path %>"><%= t('main.home.subscription') %></a></li>
                       </ul>
                     </div>
                     <div class="col-sm-4 col-lg-3">
-                      <h3>Services</h3>
+                     <h3><%= t('.services') %></h3>
                       <ul>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Constructing</a></li>
-                        <li><a href="#">3D Modelling</a></li>
-                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#"><%= t('.design') %></a></li>
+                        <li><a href="#"><%= t('.constructing') %></a></li>
+                        <li><a href="#"><%= t('.3dmodelling') %></a></li>
+                        <li><a href="#"><%= t('.consulting') %></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="footer clearfix d-none d-lg-block">
-                  <h4 class="pull-right"><%= t('.acryllic') %></h4>
-                  <div class="buttons pull-left"><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-tags"></i> Sales</a><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-star-o"></i> Favourites</a><a href="#" class="btn btn-light btn-sm mr-2"><i class="fa fa-globe"></i> Brands</a></div>
+                  <h4 class="pull-right"><%= t('.shelftalkers') %></h4>
+                  <div class="buttons pull-left"><a href="<%= mold_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-tags"></i><%= t('.sales') %></a><a href="<%= catalog_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-star-o"></i><%= t('.favorites') %></a><a href="<%= products_path %>" class="btn btn-light btn-sm mr-2"><i class="fa fa-globe"></i><%= t('.inquiry') %></a></div>
                 </div>
               </div>
             </div>
