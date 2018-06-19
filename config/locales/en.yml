@@ -50,6 +50,13 @@ en:
       delete: "Delete Product"
       edit: "Edit Product"
       new: "New Product"
+    show:
+      title: "Title: "
+      description: "Description: "
+      price: "Price: "
+      image: "Image: "
+      edit: "Edit"
+      back: "Back"
 
   carts:
     cart:
