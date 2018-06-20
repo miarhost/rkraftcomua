@@ -21,3 +21,5 @@ test "name should not be too long" do
 assert_not @user.valid?
 end 
 
+end
+

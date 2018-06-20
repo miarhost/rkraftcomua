@@ -6,10 +6,11 @@ setup do
  @subscription = subscriptions(:one)
 end
 
-should "create subscription" do
- assert_difference('Subscrtiptions.count')
- post_subscriptions_url , params: { email: @subscription.email }
+ test "should create subscription" do
+ assert_difference('Subscrtiptions.count') do
+ post subscriptions_url, params: { subscription: { email: @subscription.email } }
  assert_responce :success 
  end
+end
 
 end

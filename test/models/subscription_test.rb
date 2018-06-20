@@ -4,6 +4,7 @@ class SubscriptionTest < ActiveSupport::TestCase
 
 def setup
  @subscription = Subscription.new(email: "user@example.com")
+end 
 
 test "email should not be too long" do
  @email = "a" * 244 + "@example.com"
