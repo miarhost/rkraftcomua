@@ -14,6 +14,7 @@
 //= require turbolinks
 //= require jquery
 //= require jquery-ui
+//= require jquery_ujs
 //= require jquery.min
 //= require bootstrap-sprockets
 //= require carousel
