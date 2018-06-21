@@ -41,6 +41,9 @@ en:
       sales: "Models"
       favorites: "Prices"
       inquiry: "Leave us an inquiry"
+      blog: "Pages and blog"
+      articles: "Blog listing"
+      post: "Blog post"
 
   products:
     index:

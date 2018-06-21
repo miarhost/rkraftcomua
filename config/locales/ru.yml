@@ -41,7 +41,10 @@ ru:
       sales: "Модели"
       favorites: "Цены"
       inquiry: "Оставить запрос на просчет!"
-
+      blog: "Страницы и блог"
+      articles: "Статьи"
+      post: "Опубликовать"
+      
   products:
     index:
       title: "Продукция"
