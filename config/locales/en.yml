@@ -191,6 +191,20 @@ en:
       moldtray: "Molded tray"
       metalrack: "Metal rack"
 
+    mold:
+      mtitle: "Molded trays, stands, shelftalkers, shelforganizers"
+      moldp: "Molded production"
+      mcustom: "Custom "
+      trays: "Molded displays, stands,"
+      shelfs: "shelftalkers, shelforganizers"
+      and: " and packaging"
+      mdescr: "We make custom molded product trays for retail and advertizing."
+      shelforg: "Shelforganizer"
+      tray: "Tray"
+      shelft: "Shelftalker"
+      molded: "Molded printing, assortment/price"
+      trans: "Transparent product tray "
+
     racks:
       rtitle: "Metal product stands of welded steel pipes, wire and mesh"
       prod: "Metal production"
@@ -208,6 +222,9 @@ en:
       hook: "Wire hook header"
       mesh: "Mesh metal product stand"
       mdispenser: "Metal dispenser"
+      mdispl: "Molded shelf display"
+      2item: "Molded 2 item small product stand"
+      dispenser: "Molded dispenser"
 
   users:
     registrations:
