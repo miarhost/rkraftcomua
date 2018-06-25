@@ -9,6 +9,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       
+  <%= stylesheet_link_tag 'carousel.css', media: 'print, screen' %>
+  <%= javascript_include_tag('jquery.min.js') %>
+  <%= javascript_include_tag('bootstrap.min.js') %>
+  <%= javascript_include_tag('carousel.js') %>
 
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -20,18 +24,10 @@
    
     <!-- Google fonts - Montserrat and Merriweather-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic" rel="stylesheet" type="text/css">
-
-
-    <!-- Font Awesome css-->
-    <link rel="shortcut icon" href="favicon.png">
-  
-    
-  <%= stylesheet_link_tag 'carousel.css', media: 'print, screen' %>
-  <%= javascript_include_tag('jquery.min.js') %>
-  <%= javascript_include_tag('bootstrap.min.js') %>
-  <%= javascript_include_tag('carousel.js') %>
-</head>
-     <!-- *** NAVBAR *** -->
+ <!-- Font Awesome css-->
+  </head>
+   
+   <body>  <!-- *** NAVBAR *** -->
     <nav id="navbar" role="navigation" class="navbar navbar-light fixed-top navbar-expand-lg yamm justify-content-between">
       <div class="search-area">
         <div class="search-area-inner d-flex align-items-center justify-content-center">
@@ -213,7 +209,7 @@
     <!-- *** NAVBAR END ***-->
   </head>
 
-  <body>
+
      
   
   <% if @cart %>
