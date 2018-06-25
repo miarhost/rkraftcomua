@@ -170,7 +170,7 @@ $(document).ready(function(){
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.shelf') %></a></h3>
                   <p class="price">
-                    <del>$2.4</del> $2.12
+                    <del><%= number_to_currency( :locale => I18n.locale) %></del> $2.12
                   </p>
                 </div>
                 <!-- /.text-->
