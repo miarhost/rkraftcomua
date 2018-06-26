@@ -154,7 +154,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="#"><%= t('.popup') %></a></h3>
-                  <p class="price">$ 0.44</p>
+                  <p class="price"><%= t('.2price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -170,7 +170,7 @@ $(document).ready(function(){
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.shelf') %></a></h3>
                   <p class="price">
-                    <del><%= number_to_currency( :locale => I18n.locale) %></del> $2.12
+                    <del><%= t('.1price') %></del><%= t('.1pricec') %>
                   </p>
                 </div>
                 <!-- /.text-->
@@ -195,7 +195,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.lunch') %></a></h3>
-                  <p class="price">$0.52</p>
+                  <p class="price"><%= t('.3price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -209,7 +209,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.clam') %></a></h3>
-                  <p class="price">$0.1</p>
+                  <p class="price"><%= t('.4price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -224,7 +224,7 @@ $(document).ready(function(){
                 <div class="text">
                   <h3><a href="#"><%= t('.mold') %></a></h3>
                   <p class="price">
-                    <del>$6.5</del> $6.05
+                    <del><%= t('.5price') %></del><%= t('.5pricec') %>
                   </p>
                 </div>
                 <!-- /.text-->
@@ -249,7 +249,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="#"><%= t('.suchi') %></a></h3>
-                  <p class="price">$0.44</p>
+                  <p class="price"><%= t('.2price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -268,7 +268,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="<%= products_path %>"><%= t('.display') %></a></h3>
-                  <p class="price">$143.00</p>
+                  <p class="price"><%= t('.6price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -287,7 +287,7 @@ $(document).ready(function(){
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.stand') %></a></h3>
-                  <p class="price">$5.2</p>
+                  <p class="price"><%= t('.7price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -319,12 +319,12 @@ $(document).ready(function(){
                         </div>
                       </div>
                       <div class="col-sm-6">
-                        <h2>Lunch  box / Suchi box / Salad-box</h2>
-                        <p class="text-muted text-small text-center">Lunch box has durable and fit bottom (black) and cover (transparent), made of quality PET. Product is good for posing and shelving foods at shops, or for food delivery companies, restaurant networks. Product is made for demand, it is unique, fitting customers' sizes and design, may have logo on cover. Lunch box has durable and fit bottom (black) and cover (transparent), made of high quality PET. </p>
+                        <h2><%= t('.popup') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('.popup_text') %></p>
                         <div class="box">
                           <form>
                             <div class="sizes">
-                              <h3>Available sizes</h3>
+                              <h3><%= t('.sizes') %></h3>
                               <label for="size_s"><a href="#">300*800</a>
                                 <input id="size_s" type="radio" name="size" value="s" class="size-input">
                               </label>
@@ -335,11 +335,8 @@ $(document).ready(function(){
                                 <input id="size_l" type="radio" name="size" value="l" class="size-input">
                               </label>
                             </div>
-                            <p class="price">$0.44</p>
-                            <p class="text-center">
-                              <button type="submit" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                              <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-outline-secondary"><i class="fa fa-heart-o"></i></button>
-                            </p>
+                            <p class="price"><%= t('.2price') %></p>
+                            <p class="text-center"><a href="<%= catalog_path %>" class="btn btn-outline-primary"><%= t('products.index.add_html') %></p>
                           </form>
                         </div>
                         <!-- /.box-->
