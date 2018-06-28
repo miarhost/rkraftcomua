@@ -82,6 +82,8 @@ en:
       title: "New Order"
       legend: "Please enter your details"
       checkout: "Checkout"
+    create:
+      thanks: "Thank you for your order."
     form:
       name: "Name"
       address: "Address"
@@ -273,8 +275,7 @@ en:
       subject: "Your order is received and at work"
       title: "Your order received!"
       message: "Hello, we received your order and will get back to you soon with production and shipping details."
-      thank: "Thank you for your recent order at Rkraftcomua.
-             You ordered the following items:"
+      thank: "Thank you for your recent order at Rkraftcomua. You ordered the following items:"
       separate: "We will send you a separate email when your order ships."
       sum: "Total: "
     shipped:

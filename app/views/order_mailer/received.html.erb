@@ -7,5 +7,7 @@
 Dear <%= @order.name %>
 <%= t('.thank') %>
 <%= render @order.line_items -%>
+<%= t('.sum') %>
+<%= @order.line_items.sum(&:total_price) %>
 <%= t('.separate') %>
 </p>

@@ -67,8 +67,9 @@ class OrdersController < ApplicationController
     end
   end
 
-  private
 
+  private
+   
     def ensure_cart_isnt_empty
       if @cart.line_items.empty? 
         redirect_to products_url, notice: 'Your cart is empty'
@@ -78,6 +79,7 @@ class OrdersController < ApplicationController
     def set_order
       @order = Order.find(params[:id])
     end
+  
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
