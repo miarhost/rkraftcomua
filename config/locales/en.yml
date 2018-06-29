@@ -250,6 +250,19 @@ en:
       2item: "Molded 2 item small product stand"
       dispenser: "Molded dispenser"
 
+    clamshells:
+      ctitle: "Clamshells"
+      cgallery: "Different sizes and purposes plastic packaging of custom design"
+      ctext: "We have rich experience in plastic packaging production for foods, candies, retail, householding goods, hardware, fasteners of PET, PVC, PP, HIPS , with thickness of material from 0,2 to 2 mm. We have facilities and knowledge to support and provide quality for customized plastic packaging. We made customized plastic packaging of all types, starting with 3d-model prototyping, picking material, building a molding tool and then molding products. "
+      cstitle: "Custom plastic packaging"
+      2component: "2 component clamshell"
+      lb: "Lunch Box"
+      bp: "Folded clamshell"
+      sb: "Salad box"
+      shb: "Suchi-box"
+      sauce: "Tray for sauce with/without a cover"
+      tray: "Products tray for retail"
+
   users:
     registrations:
       edit:

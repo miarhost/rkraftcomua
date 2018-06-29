@@ -5,9 +5,9 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-               <h1>Do you want to see more?</h1>
-                <p class="lead">Molded plastic stand for chocolate , for 2 types , with sticker ,  silk-screen printing</p>
-                <p class="text-center"><a href="<%= gallery_path %>" class="btn btn-outline-white-primary">See latest gallery </a></p>
+               <h1><%= t('.ctitle') %></h1>
+                <p class="lead"><%= t('.cgallery') %></p>
+                <p class="text-center"><a href="<%= gallery_path %>" class="btn btn-outline-white-primary"><%= t('main.home.2_gallery_s') %></a></p>
               </div>
             </div>
           </div>
@@ -17,11 +17,11 @@
 
 <div class="col-sm-6">
               <div class="post">
-                <h4><a href="#">Custom plastic packaging</a></h4>
+                <h4><a href="#"><%= t('.cstitle') %></a></h4>
                 <p class="author-category">Custom <a href="#">Plastic Packaging</a> in <a href="">About Us</a></p>
                 <hr>
-                <p class="intro">We have rich experience in plastic packaging production for foods, candies, retail, householding goods, hardware, fasteners of PET, PVC, PP, HIPS , with thickness of material from 0,2 to 2 mm. We have facilities and knowledge to support and provide quality for customized plastic packaging. We made customized plastic packaging of all types, starting with 3d-model prototyping, picking material, building a molding tool and then molding products. </p>
-                <p class="read-more"><a href="<%= products_path %>" class="btn btn-outline-primary">Go to products catalog</a></p>
+                <p class="intro"><%= t('.ctext') %></p>
+                <p class="read-more"><a href="<%= products_path %>" class="btn btn-outline-primary"><%= t('main.racks.goproducts') %></a></p>
               </div>
             </div>
           </div>
@@ -30,11 +30,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= gallery_path %>"><img src="<%= asset_path 'title.png' %>" alt="Rkraft" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Plastic packaging: lunchboxes</a></h3>
+                  <h3><a href="#"><%= t('main.home.popup') %></a></h3>
                   <p class="price">$ 0.44</p>
                 </div>
                 <!-- /.text-->
@@ -44,12 +44,12 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path '2kcl.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">2 component clamshell</a></h3>
+                  <h3><a href="detail.html"><%= t('.2component') %></a></h3>
                   <p class="price">
                     <del>$0.41</del> $0.39
                   </p>
@@ -71,11 +71,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Lunch Box</a></h3>
+                  <h3><a href="detail.html"><%= t('.lb') %></a></h3>
                   <p class="price">$0.52</p>
                 </div>
                 <!-- /.text-->
@@ -85,11 +85,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'blp.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Clamshell</a></h3>
+                  <h3><a href="detail.html"><%= t('.bp') %></a></h3>
                   <p class="price">$0.1</p>
                 </div>
                 <!-- /.text-->
@@ -99,11 +99,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box5.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Salad box</a></h3>
+                  <h3><a href="detail.html"><%= t('.sb') %></a></h3>
                   <p class="price">
                     <del>$0.5</del> $0.42
                   </p>
@@ -125,11 +125,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Suchi-box</a></h3>
+                  <h3><a href="detail.html"><%= t('.shb') %></a></h3>
                   <p class="price">$0.44</p>
                 </div>
                 <!-- /.text-->
@@ -144,11 +144,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'sauce.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="<%= products_path %>">Tray for sauce with/without a cover</a></h3>
+                  <h3><a href="<%= products_path %>"><%= t('.sauce') %></a></h3>
                   <p class="price">$0.23</p>
                 </div>
                 <!-- /.text-->
@@ -163,11 +163,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'cosmetics.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Products tray for retail</a></h3>
+                  <h3><a href="detail.html"><%= t('.tray') %></a></h3>
                   <p class="price">$0.07</p>
                 </div>
                 <!-- /.text-->
@@ -200,8 +200,8 @@
                         </div>
                       </div>
                       <div class="col-sm-6">
-                        <h2>Lunch  box / Suchi box / Salad-box</h2>
-                        <p class="text-muted text-small text-center">Lunch box has durable and fit bottom (black) and cover (transparent), made of quality PET. Product is good for posing and shelving foods at shops, or for food delivery companies, restaurant networks. Product is made for demand, it is unique, fitting customers' sizes and design, may have logo on cover. Lunch box has durable and fit bottom (black) and cover (transparent), made of high quality PET. </p>
+                        <h2><%= t('main.home.popup') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('main.home.popup_text') %></p>
                         <div class="box">
                           <form>
                             <div class="sizes">
