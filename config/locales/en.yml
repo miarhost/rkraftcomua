@@ -101,6 +101,17 @@ en:
         name: "Name"  
         email: "Email"
         pay_type: "Payment method"
+    errors:
+      messages:
+        inclusion: "doesn't exist"
+        blank: "can't be blank"
+          
+  errors:
+    template:
+      body: "The following problems occured during the saving:"
+      header:
+        one: "The saving of %{model} is impossible due to 1 error"
+        other: "The saving of %{model} is impossible due to %{count} errors"
 
   main:
     home:

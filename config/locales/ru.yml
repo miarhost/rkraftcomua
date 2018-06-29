@@ -103,8 +103,8 @@ ru:
         pay_type: "Способ оплаты"
     errors:
       messages:
-        inclusion: "Не существует; нет в списке"
-        blank: "Не может быть пустым"
+        inclusion: "не существует; нет в списке"
+        blank: "не может быть пустым"
  
   errors:
     template:
