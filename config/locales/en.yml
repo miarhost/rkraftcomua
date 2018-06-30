@@ -262,6 +262,15 @@ en:
       shb: "Suchi-box"
       sauce: "Tray for sauce with/without a cover"
       tray: "Products tray for retail"
+      1price: "$ 0.44"
+      2price: "$0.41"
+      2cprice: "$0.39"
+      3price: "$0.52"
+      4price: "$0.1"
+      5price: "$0.5"
+      5cprice: " $0.42"
+      6price: "$0.23"
+      7price: "$0.07"
 
   users:
     registrations:

@@ -264,6 +264,15 @@ ru:
       shb: "Суши-бокс"
       sauce: "Трей для соуса с крышкой и без"
       tray: "Продуктовый трей для розничных сетей"
+      1price: "11.50 UAH"
+      2price: "10.72 UAH"
+      2cprice: "10.20 UAH"
+      3price: "13.60 UAH"
+      4price: "2.62 UAH"
+      5price: "13.08 UAH"
+      5cprice: " 10.98 UAH"
+      6price: "6.00 UAH"
+      7price: "1.83 UAH"
 
   users:
     registrations:

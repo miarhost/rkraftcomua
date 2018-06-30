@@ -35,7 +35,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="#"><%= t('main.home.popup') %></a></h3>
-                  <p class="price">$ 0.44</p>
+                  <p class="price"><%= t('.1price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -51,7 +51,7 @@
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.2component') %></a></h3>
                   <p class="price">
-                    <del>$0.41</del> $0.39
+                    <del><%= t('.2price') %></del><%= t('.2cprice') %>
                   </p>
                 </div>
                 <!-- /.text-->
@@ -76,7 +76,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.lb') %></a></h3>
-                  <p class="price">$0.52</p>
+                  <p class="price"><%= t('.3price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -90,7 +90,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.bp') %></a></h3>
-                  <p class="price">$0.1</p>
+                  <p class="price"><%= t('.4price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -105,7 +105,7 @@
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.sb') %></a></h3>
                   <p class="price">
-                    <del>$0.5</del> $0.42
+                    <del><%= t('.5price') %></del><%= t('.5cprice') %>
                   </p>
                 </div>
                 <!-- /.text-->
@@ -130,7 +130,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.shb') %></a></h3>
-                  <p class="price">$0.44</p>
+                  <p class="price"><%= t('.1price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -149,7 +149,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="<%= products_path %>"><%= t('.sauce') %></a></h3>
-                  <p class="price">$0.23</p>
+                  <p class="price"><%= t('.6price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -168,7 +168,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.tray') %></a></h3>
-                  <p class="price">$0.07</p>
+                  <p class="price"><%= t('.7price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -228,32 +228,4 @@
     <footer class='<% controller.controller_name %>'>
     <%= yield %>
   </div>
-
-
-<div class=container>
-<div class="col-lg-3 col-md-6">
-              <h4>Where to find us</h4>
-              <p><strong>Maps</strong><br>Ukraine<br>   Kyiv Region <br>    Find on map<br>   Kyiv <br><strong>Contacts </strong></p><a href="<%= contacts_path %>">Go to contact page</a>
-              <hr class="d-block d-md-none">
-            </div>
-            <!-- /.col-lg-3-->
-            
-        
-            
-                            <!-- /input-group-->
-             </form>
-              <hr>
-              <h4>Stay in touch</h4>
-              <p class="social"><a href="#"><i class="fa fa-facebook-square"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-envelope"></i></a></p>
-            </div>
-            <!-- /.col-lg-3-->
-          </div>
-          <!-- /.row-->
-        </div>
-        <!-- /.container-->
-      </div>
- <!-- *** FOOTER END ***-->
-
-</div>
-
 </footer>
