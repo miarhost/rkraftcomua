@@ -26,6 +26,10 @@ resources :products do
    get :who_bought, on: :member
 end
 
+resources :line_items do
+  get 'decrement'
+end
+
  #do
   #get '/contacts', as: 'inquiries#index'
 #end
