@@ -11,6 +11,7 @@
 <td><%= line_item.product.title_ru %></td>
 <% end %>
 <td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
+<td><%= link_to ' Remove', decrement_line_item_path(id: line_item.product_id) %></td>
 
 </tr>
 

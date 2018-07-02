@@ -23,11 +23,7 @@ class Cart < ApplicationRecord
    elsif current_item.quantity == 1 
    	current_item.destroy
    end
-   	current item
+   	current_item
  end
-
- #def total_quantity
-# line_items.to_a.sum { |item| item.total_quantity }
- #end
 
 end

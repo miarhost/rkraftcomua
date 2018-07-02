@@ -1,7 +1,7 @@
 class LineItemsController < ApplicationController
   include CurrentCart
 
-  before_action :set_cart, only: [:create, :decrement]
+  before_action :set_cart, only: [:create, :decrement, :increase]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
   # GET /line_items
@@ -67,7 +67,7 @@ class LineItemsController < ApplicationController
   end
 
   def decrement
-    product = Product.find(params[:product_id])
+    product = Product.find(params[:id])
     @line_item = @cart.remove_product(product)
     respond_to do |format| 
      if @line_item.save

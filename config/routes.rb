@@ -27,7 +27,7 @@ resources :products do
 end
 
 resources :line_items do
-  get 'decrement'
+  get  :decrement, on: :member
 end
 
  #do
