@@ -314,6 +314,13 @@ en:
     shipped:
       subject: "Your order is shipped. Please confirm the reception"
 
+  inquiry_mailer: 
+    reply: 
+      customer: "Dear"
+      title: "Thank you for your interest to Rkraftcomua,"
+      text: "We got your inquiry and will process it as soon as possible! 
+  Your inquiry content: . Your contacts: . Please note that for better results your inquiry should content most possibly detailed product sizes, usage description, images of your brand/products, preferred quantity. "
+
 
 
 
