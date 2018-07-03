@@ -1,3 +1,9 @@
 <div class="center jumbotron">
-<h2>Your inquiry is sent</h2>
-<p>We got your inquiry and will process it as soon as possible! </p>
+<h2>Dear <%= @inquiry.first_name %> <%= @inquiry.second_name %>!</h2>
+<h2>Thank you for your interest to Rkraftcomua,</h2>
+<p>We got your inquiry and will process it as soon as possible! 
+	_______________________________________________
+
+  Your inquiry content: <%= @inquiry.message %>.
+  Your contacts: <%= @inquiry.email %>.
+ Please note that for better results your inquiry should content most possibly detailed product sizes, usage description, images of your brand/products, preferred quantity.  
