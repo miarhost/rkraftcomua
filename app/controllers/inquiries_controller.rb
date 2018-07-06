@@ -27,7 +27,7 @@ private
 #end
 
 def inquiry_params
- params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message)
+ params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message, :image, :image_cache)
 end
 
 end

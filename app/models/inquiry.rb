@@ -4,6 +4,9 @@ class Inquiry < ApplicationRecord
 	 length: { minimum: 12, maximum: 255 },
           format: {with: VALID_EMAIL_REGEX }
     validates :message,
-          presence: :true          
+          presence: :true      
+    mount_uploader :image, ImageUploader  
+
+    serialize :images  
 
 end
