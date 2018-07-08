@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  get 'images/create'
+
+  get 'images/destroy'
+
   devise_for :admins
   get 'admins' => 'admins#index'
   resources :orders
