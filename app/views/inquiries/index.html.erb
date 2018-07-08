@@ -20,7 +20,7 @@
         <td><%= inquiry.email %></td>
         <td><%= inquiry.subject %></td>
         <td><%= inquiry.message %></td>
-
+        <td><%= image_tag(inquiry.image_url, version :thumb) if inquiry.image? %></td>
       </tr>
     <% end %>
   </tbody>

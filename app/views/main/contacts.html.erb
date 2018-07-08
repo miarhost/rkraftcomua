@@ -44,7 +44,7 @@
             <h4 class="heading margin-bottom"><%= t('.inqform') %></h4>
             <p class="text-muted"><%= t('.place') %></p>
             <div class="form-holder">
-              <%= form_for(@inquiry, path: '/inquiries', method: :post, htm: { multipart: :true }) do |f| %>
+              <%= form_for(@inquiry, path: '/inquiries', method: :post) do |f| %>
                 <div class="row">
                 <div class="col-sm-6">
                  
@@ -82,8 +82,8 @@
                 <div class="col-sm-12">
 
                     <label for="image">Place your images here</label>
-                    <%= f.file_field :image, placeholder: 'Place your products, sizing images here', multiple: true %>
-                    <%= f.hidden_field :image_cache, multiple: true %>
+                    <%= f.file_field :image, placeholder: 'Place your products, sizing images here' %>
+                    <%= f.hidden_field :image_cache %>
                 </div>
                 <div class="col-sm-12">
                    <div class="form-group">
