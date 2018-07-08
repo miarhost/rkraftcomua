@@ -20,6 +20,9 @@
         <td><%= inquiry.email %></td>
         <td><%= inquiry.subject %></td>
         <td><%= inquiry.message %></td>
+        <% inquiry.images.each do |image| %>
+            <td><%= image_tag(image.url) %></td>
+            <% end %>
 
       </tr>
     <% end %>

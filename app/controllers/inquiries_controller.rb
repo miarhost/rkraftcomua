@@ -5,10 +5,12 @@ class InquiriesController < ApplicationController
 
 def index
 @inquiries = Inquiry.all
+@inquiry.images = @images 
 end	
 
 def new
 @inquiry = Inquiry.new
+
 end
 
 def create
@@ -27,7 +29,7 @@ private
 #end
 
 def inquiry_params
- params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message, :image, :image_cache)
+ params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message, {images: []})
 end
 
 end

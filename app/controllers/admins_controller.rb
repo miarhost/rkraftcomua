@@ -5,5 +5,6 @@ class AdminsController < ApplicationController
 	def index
 	 @total_orders = Order.count
 	 @inquiries = Inquiry.all 
+	 @images = Image.all
 	end
 end

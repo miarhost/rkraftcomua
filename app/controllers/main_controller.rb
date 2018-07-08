@@ -17,6 +17,7 @@ class MainController < ApplicationController
 
   def contacts
     @inquiry = Inquiry.new
+    @inquiry.images = @images
 
   end
 
