@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :carts
   devise_for :users
   resources :products
+  resources :posts
   resources :subscriptions
   resources :inquiries
 root 'main#home'
@@ -47,6 +48,7 @@ end
   resources :carts
   resources :products
   resources :subscriptions
+  resources :posts
   root 'main#home', as: 'main_home', via: :all
   end 
 
