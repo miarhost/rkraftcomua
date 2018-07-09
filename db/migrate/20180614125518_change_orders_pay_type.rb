@@ -2,18 +2,16 @@ class ChangeOrdersPayType < ActiveRecord::Migration[5.1]
 
 def up
  
- change_table :orders do |t|
-   t.change :pay_type, :integer
-  end
-
+ remove_column :orders, :pay_type
+  add_column :orders, :pay_type, :integer
+ 
 end
 
 def down 
 
-  change_table :orders do |t| 
-   t.change :pay_type, :string
-   t.change :integer, :string
-  end
+ 
+remove_column :orders, :pay_type
+ add_column :orders, :pay_type, :string
 
 end   
 
