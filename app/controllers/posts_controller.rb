@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
 before_action :authenticate_admin!, only: [:create, :update, :destroy]
+before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 def new
  @post = Post.new
@@ -49,6 +50,16 @@ def destroy
   format.json { head :no_content }
  end
 end
+
+private 
+
+def set_post
+ @post = Post.find(params[:id])
+end
+
+def post_params
+ params.require(:post).permit(:title, :body, :image, :image_cache)
+end 
 
 end
 

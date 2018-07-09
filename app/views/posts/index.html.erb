@@ -1,0 +1,19 @@
+<div class="center jumbotron">
+<h1><strong>Our blog</strong></h1>
+<table width="100%" border="0" cellspaceing="0" cellpadding="0">
+ <thead style="background color: #dfd">
+ <tr>
+ <th>Title</th>
+ <th>Topic</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+<% @posts.each do |post| %>
+<td><%=post.title %></td>
+<td><%= truncate(strip_tags(post.body), length: 100) %></td>
+<% end %>
+</tr>
+</tbody>
+</table>
+</div>
