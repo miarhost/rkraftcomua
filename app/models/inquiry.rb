@@ -7,6 +7,4 @@ class Inquiry < ApplicationRecord
           presence: :true      
     mount_uploader :image, ImageUploader  
 
-    serialize :images  
-
-end
+ end
