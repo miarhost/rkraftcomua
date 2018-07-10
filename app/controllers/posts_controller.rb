@@ -30,14 +30,13 @@ def create
 end
 
 def update 
- @post = Post.find(params[:id])
  respond_to do |format| 
   if @post.update(post_params)
   	format.html { redirect_to @post, notice: "Post is updated" }
-  	format.json ( render :show, status: :ok, location: @post )
+  	format.json { render :show, status: :ok, location: @post }
   else 
-  	format.html { render :new }
-  	format.json { render json: @post.errors, sstatus: :unprocessable_entity }
+  	format.html { render :edit }
+  	format.json { render json: @post.errors, status: :unprocessable_entity }
   end
  end
 end
