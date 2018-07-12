@@ -12,6 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
+//= require popover
 //= require jquery-ui
 //= require jquery_ujs
 //= require jquery.min
