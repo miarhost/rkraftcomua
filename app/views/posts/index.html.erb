@@ -1,20 +1,24 @@
 <div class="center jumbotron">
-<h1><strong>Our blog</strong></h1>
+<h1 class="text-uppercase"><strong>Our blog</strong></h1>
 <table width="100%" border="0" cellspaceing="0" cellpadding="0">
  <thead style= "background-color: #ced4da">
- <tr>
+ <tr class="post_title">
  <th>Title</th>
  <th>Topic</th>
+ <th>Created at</th>
+ <th colspan="3"></th>
 </tr>
 </thead>
 <tbody>
-	<tr>
+	<tr class="post_list">
 <% @posts.each do |post| %>
-<td><%=link_to post.title, post_path(post) %></td>
-<td><%= truncate(strip_tags(post.body), length: 100) %></td>
-<td><%= post.created_at %></td>
-<% end %>
+<td class="post_title"><%=link_to post.title, post_path(post) %></td>
+<td class="post_body"><%= truncate(strip_tags(post.body), length: 100) %></td>
+<td class="post_actions"><%= post.created_at %></td>
+</td>
 </tr>
+<% end %>
+
 </tbody>
 </table>
 </div>

@@ -8,7 +8,7 @@
 <% cache @products do %>
 <% @products.each do |product| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
-   <td> 
+   <td class="line_image"> 
     <% cache product  do %> 
     <%= image_tag(product.image_url, class: 'list_image') %>
   </td>
