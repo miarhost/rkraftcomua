@@ -7,10 +7,10 @@ class SubscriptionMailer < ApplicationMailer
     end 
 
 
- def notify(post, emails)
+ def notify(post)
   @post = post 
-  emails = Subscription.all.map{|i| i.email}
-  emails.map!{|i| mail(to:email, subject: "New blog post is coming out!")}
+  @emails = Subscription.all.map{|i| i.email}
+  @emails.map!{|email| mail(to: email, subject: "New blog post is coming out!")}
  end
 
 end
