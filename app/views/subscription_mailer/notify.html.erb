@@ -1,5 +1,5 @@
 <div class="center jumbotron">
-<h2>New blog post appeared at Rkraftcomua! </h2>
-<p>Hello, We are writing you because you subscribed on news letters! </p>
+<h2><%= t('.post') %></h2>
+<p><%= t('.subject') %></p>
 <%= image_tag(@post.image) if @post.image? %>
-<p>Today's news: <%= @post.title %></p>
+<p><%= t('.news') %> <%= @post.title %></p>

@@ -321,8 +321,28 @@ en:
       text: "We got your inquiry and will process it as soon as possible! Your inquiry content: "
       recs: "Your contacts: "
       next: "Please note that for better results your inquiry should content most possibly detailed product sizes, usage description, images of your brand/products, preferred quantity."
-       
+  
+  posts:
+    index: 
+      title: "Our blog"   
+      name: "Title"   
+      topic: "Topic"
+      created: "Created at"
+    show:
+      admin: "Login as admin to make changes"
+      delete: "Delete"
+      sure: "Are you sure?"
+    edit: 
+      show: "Show"
+      etitle: "Editing Post"
+    new:
+      ntitle: "New Post"
 
+  subscriptions_mailer:
+    notify:
+      post: "New blog post appeared at Rkraftcomua! "
+      subject: "Hello, We are writing you because you subscribed on news letters! "
+      news: "Today's news: "
 
 
 
