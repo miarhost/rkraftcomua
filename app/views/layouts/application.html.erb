@@ -30,10 +30,7 @@
     <nav id="navbar" role="navigation" class="navbar navbar-light fixed-top navbar-expand-lg yamm justify-content-between">
    
       <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo_rkraft.jpg' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><span class="sr-only">Rkraftcomua - homepage</span></a>
-        <div class="navbar-buttons d-lg-none">
-         
-        
-        </div>
+      
         <div id="navigation" class="navbar-collapse collapse">
           <div class="navbar-nav mr-auto">
             <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
@@ -222,7 +219,7 @@
        <%= button_to 'Logout',  destroy_user_session %>
       <% end %>
 
-  </header>
+
 
   <div class="container">
     <footer class='<% controller.controller_name %>'>
