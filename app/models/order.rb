@@ -12,9 +12,8 @@ class Order < ApplicationRecord
  validates :name, presence: true, length: { minimum: 3 }
  validates :address, presence: true, length: { minimum: 2, maximum: 150 }
  validates :email, presence: true, length: { minimum: 12, maximum: 255 },
-                   format: { with: REGEXP },
-                   uniqueness: true
-                   
+                   format: { with: REGEXP }
+                                    
  validates :pay_type, inclusion: pay_types.keys 
 
     def add_line_items_from_cart(cart)
