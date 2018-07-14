@@ -23,8 +23,10 @@
   
     <!-- Google fonts - Montserrat and Merriweather-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic" rel="stylesheet" type="text/css">
+  </head>
  <!-- Font Awesome css-->
-
+  <body>
+    <header>
    <!-- *** NAVBAR *** -->
     <nav id="navbar" role="navigation" class="navbar navbar-light fixed-top navbar-expand-lg yamm justify-content-between">
    
@@ -192,10 +194,9 @@
     </nav>
     <!-- /#navbar-->
     <!-- *** NAVBAR END ***-->
-  </head>
 
 
-   <body> 
+
   
   <% if @cart %>
   <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
@@ -218,6 +219,7 @@
        <%= button_to 'Logout',  destroy_user_session %>
       <% end %>
 
+  </header>
 
 
   <div class="container">
