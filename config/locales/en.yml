@@ -271,7 +271,7 @@ en:
       5cprice: " $0.42"
       6price: "$0.23"
       7price: "$0.07"
-
+  
   users:
     registrations:
       edit:
