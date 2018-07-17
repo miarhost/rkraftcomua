@@ -229,9 +229,9 @@ en:
       mdispl: "Molded shelf display"
       2item: "Molded 2 item stand"
       dispenser: "Molded dispenser"
-      1price: "$ 0.50 "
-      2price: "$ 7 "
-      2cprice: "$ 5.8"
+      1price: "$0.50 "
+      2price: "$7 "
+      2cprice: "$5.8"
       3price: "$4.85 "
       3cprice: "$4.7"
       4price: "$6.87"
@@ -287,6 +287,11 @@ en:
       moldpr: "Molded printing, price"
       molded: "Molded printing, assortment"
       moldstop: "Molded stopper"
+      1price:  "$2.12"
+      2price: "$4"
+      2cprice: "$3"
+      3price: "$2.55"
+      4price: "$3"
   
   users:
     registrations:

@@ -287,6 +287,11 @@ ru:
       moldpr: "Формованный ценник"
       molded: "Формованная витринка"
       moldstop: "Формованный стоппер"
+      1price: "55.44 UAH"
+      2price: "104.60 UAH"
+      2cprice: "78.45 UAH"
+      3price: "67 UAH"
+      4price: "78.45 UAH"
 
   users:
     registrations:
