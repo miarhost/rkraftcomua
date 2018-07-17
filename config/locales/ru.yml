@@ -251,6 +251,14 @@ ru:
       mdispl: "Формованный полочный дисплей"
       2item: "Формованная подставка на 2 отделения"
       dispenser: "Формованный диспенсер"
+      1price: "13.10 UAH"
+      2price: "183 UAH"
+      2cprice: "151.67 UAH"
+      3price: "126.83 UAH"
+      3cprice: "122.90 UAH"
+      4price: "$179,65 UAH"
+      5price: "16.47 UAH"
+      6price: "25.37 UAH"
 
     clamshells:
       ctitle: "Блистерная упаковка"
@@ -273,6 +281,12 @@ ru:
       5cprice: " 10.98 UAH"
       6price: "6.00 UAH"
       7price: "1.83 UAH"
+
+    moldshell:
+      shelft: "Шелфтокер"
+      moldpr: "Формованный ценник"
+      molded: "Формованная витринка"
+      moldstop: "Формованный стоппер"
 
   users:
     registrations:

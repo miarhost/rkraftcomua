@@ -225,9 +225,19 @@ en:
       mdescr: "We make custom molded product trays for retail and advertizing."
       shelforg: "Shelforganizer"
       tray: "Tray"
-      shelft: "Shelftalker"
-      molded: "Molded printing, assortment/price"
       trans: "Transparent product tray "
+      mdispl: "Molded shelf display"
+      2item: "Molded 2 item stand"
+      dispenser: "Molded dispenser"
+      1price: "$ 0.50 "
+      2price: "$ 7 "
+      2cprice: "$ 5.8"
+      3price: "$4.85 "
+      3cprice: "$4.7"
+      4price: "$6.87"
+      5price: "$0.63"
+      6price: "$0.97"
+
 
     racks:
       rtitle: "Metal product stands of welded steel pipes, wire and mesh"
@@ -271,6 +281,12 @@ en:
       5cprice: " $0.42"
       6price: "$0.23"
       7price: "$0.07"
+
+    moldshell:
+      shelft: "Shelftalker"
+      moldpr: "Molded printing, price"
+      molded: "Molded printing, assortment"
+      moldstop: "Molded stopper"
   
   users:
     registrations:

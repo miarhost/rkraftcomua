@@ -36,7 +36,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="#"><%= t('.shelforg') %></a></h3>
-                  <p class="price">$ 0.50</p>
+                  <p class="price"><%= t('.1price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -52,8 +52,7 @@
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.tray') %></a></h3>
                   <p class="price">
-                    <del>$17</del> $5.8
-                  </p>
+                    <del><%= t('.2price') %></del><%= t('.2cprice') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon sale">
@@ -68,34 +67,7 @@
                 <!-- /.ribbon-->
               </div>
               <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalker.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="detail.html"><%= t('.shelft') %></a></h3>
-                  <p class="price">$2.55</p>
-                </div>
-                <!-- /.text-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'assortment.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="detail.html"><%= t('.molded') %></a></h3>
-                  <p class="price">$3.00</p>
-                </div>
-                <!-- /.text-->
-              </div>
-              <!-- /.product-->
+
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
@@ -106,7 +78,7 @@
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.trans') %></a></h3>
                   <p class="price">
-                    <del>$4.85</del> $4.7
+                    <del><%= t('.3price') %></del><%= t('.3cprice') %>
                   </p>
                 </div>
                 <!-- /.text-->
@@ -131,7 +103,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.mdispl') %></a></h3>
-                  <p class="price">$6.87</p>
+                  <p class="price"><%= t('.4price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -150,7 +122,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="<%= products_path %>"><%= t('.2item') %></a></h3>
-                  <p class="price">$0.63</p>
+                  <p class="price"><%= t('.5price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -169,7 +141,7 @@
                 <!-- /.image-->
                 <div class="text">
                   <h3><a href="detail.html"><%= t('.dispenser') %></a></h3>
-                  <p class="price">$0.97</p>
+                  <p class="price"><%= t('.price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
