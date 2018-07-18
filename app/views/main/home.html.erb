@@ -163,7 +163,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalkers.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-new" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
@@ -218,7 +218,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelforg.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-1" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
@@ -350,11 +350,77 @@ $(document).ready(function(){
                 </div>
               </div>
               <!-- /.modal-dialog-->
+                <div id="product-quick-view-modal-new" tabindex="-1" role="dialog" aria-hidden="false" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                    <div class="row quick-view product-main">
+                      <div class="col-sm-6">
+                        <div class="quick-view-main-image"><img src="<%= asset_path 'title.png' %>" alt="" class="img-fluid"></div>
+                        <div class="ribbon ribbon-quick-view sale">
+                          <div class="theribbon">most required</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="ribbon ribbon-quick-view new">
+                          <div class="theribbon">NEW</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="row thumbs">
+                          <div class="col-4"><a href="<%= asset_path 'box5.jpg' %>" class="thumb"><img src="<%= asset_path 'box5.jpg' %>"" alt="" class="img-fluid"></a></div>
+                          <div class="col-4"><a href="<%= asset_path 'box1.jpg' %>" class="thumb"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid"></a></div>
+                          <div class="col-4"><a href="<%= asset_path 'suchiboxx.jpg' %>" class="thumb"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid"></a></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2><%= t('.popup') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('.popup_text') %></p>
+                        <div class="box">
+                          <form>
+                            <div class="sizes">
+                              <h3><%= t('.sizes') %></h3>
+                              <label for="size_s"><a href="#">300*800</a>
+                                <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                              </label>
+                              <label for="size_m"><a href="#">1200*1200</a>
+                                <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                              </label>
+                              <label for="size_l"><a href="#">610*750</a>
+                                <input id="size_l" type="radio" name="size" value="l" class="size-input">
+                              </label>
+                            </div>
+                            <p class="price"><%= t('.2price') %></p>
+                            <p class="text-center"><a href="<%= catalog_path %>" class="btn btn-outline-primary"><%= t('products.index.add_html') %></a></p>
+                          </form>
+                        </div>
+                        <!-- /.box-->
+                        <div class="quick-view-social">
+                          <h4>Show it to your friends</h4>
+                          <p><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.modal-dialog-->
+
             </div>
             <!-- /.modal-->
           </div>
           <!-- /.products-->
         </div>
+        <script>
+    $("#productQuickViewModal,#productQuickViewModalNew").on('show.bs.modal', function (e) {
+    var that=$(this);
+    var id=that.attr('id'); //get the id of button which got clicked
+    setTimeout(function(){
+        $('.modal-backdrop').attr('data-id',id);
+     });
+});
+</script>
         <!--
         *** PROMO BAR ***
         _________________________________________________________
