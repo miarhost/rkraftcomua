@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   devise_for :admins
   get 'admins' => 'admins#index'
   resources :orders
@@ -11,7 +10,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :subscriptions
   resources :inquiries
-root 'main#home'
+  root 'main#home'
   get '/home', to: 'main#home'
   get '/catalog', to: 'main#catalog'
   get 'services', to: 'main#services'
@@ -23,17 +22,17 @@ root 'main#home'
   get '/mold', to: 'main#mold'
   get '/moldshell', to: 'main#moldshell'
   
-resources :products do
-   get :who_bought, on: :member
-end
+  resources :products do
+     get :who_bought, on: :member
+  end
 
-resources :line_items do
-  get  :decrement, on: :member
-end
+  resources :line_items do
+    get  :decrement, on: :member
+  end
 
- #do
-  #get '/contacts', as: 'inquiries#index'
-#end
+  #do
+    #get '/contacts', as: 'inquiries#index'
+  #end
 
   get 'sessions/new'
 
@@ -42,15 +41,14 @@ end
   get 'sessions/destroy'
 
   scope "/:locale" do 
-  resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
-  resources :products
-  resources :subscriptions
-  resources :posts
-  root 'main#home', as: 'main_home', via: :all
+    resources :users
+    resources :orders
+    resources :line_items
+    resources :carts
+    resources :products
+    resources :subscriptions
+    resources :posts
+    root 'main#home', as: 'main_home', via: :all
   end 
 
- 
 end
