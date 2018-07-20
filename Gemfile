@@ -8,7 +8,6 @@ end
 gem 'rails', '~> 5.1.6'
 
 gem 'bootstrap', '4.0.0'
-gem 'bootstrap-sass', '~> 3.3.7'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'activemerchant', '~> 1.78'
 gem 'devise'
