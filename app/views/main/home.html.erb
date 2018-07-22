@@ -163,7 +163,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalkers.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-new" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-1" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
@@ -190,7 +190,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-2" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
@@ -204,7 +204,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'blp.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-3" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
@@ -218,7 +218,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelforg.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-1" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
@@ -353,9 +353,20 @@ $(document).ready(function(){
             </div>
             <!-- /.modal-->
            <!-- /.modal-dialog -->
-          <div id="product-quick-view-modal-new" tabindex="-1" 
+          <div id="product-quick-view-modal-1" tabindex="-1" 
            role="dialog" aria-hidden="false" class="modal fade">
            <%= render 'modal2' %>
+          </div>
+            <!-- /.modal-dialog -->
+
+          <div id="product-quick-view-modal-2" tabindex="-1" 
+           role="dialog" aria-hidden="false" class="modal fade">
+           <%= render 'modal3' %>
+          </div>
+            <!-- /.modal-dialog -->
+          <div id="product-quick-view-modal-3" tabindex="-1" 
+           role="dialog" aria-hidden="false" class="modal fade">
+           <%= render 'modal4' %>
           </div>
           <!-- /.products-->
         </div>

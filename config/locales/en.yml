@@ -167,10 +167,14 @@ en:
       7price: "$5.2"
       popup: "Lunch  box / Suchi box / Salad-box"
       popup_text: "Lunch box has durable and fit bottom (black) and cover (transparent), made of quality PET. Product is good for posing and shelving foods at shops, or for food delivery companies, restaurant networks. Product is made for demand, it is unique, fitting customers' sizes and design, may have logo on cover. "
-      sizes: "Example sizes"
+      sizes: "Example sizes:"
       popup1: "Molded printing: shelftalkers"
       popup_text1: "Thermoformed products can apply printing within two ways: offset printing and oracal sticking. These examples are made with oracal sticking and careful preprinting preparation"
-               
+      popup2: "Lunch box"
+      popup_text2: "Lunch box has durable and fit bottom (black) and cover (transparent), made of quality PET. Product is good for posing and shelving foods at shops, or for food delivery companies, restaurant networks. Product is made for demand, it is unique, fitting customers' sizes and design, may have logo on cover. "
+      popup3: "Fold-sided clamshell"
+      popup_text3: " Universal packaging for retail with ready made molding tools for 4 sizes, fit for many retail purposes. "
+      sizes1: "Actual sizes:"      
     services:
       s_title: "Services" 
       p_text: "We supply our customers with graphic design including preprinting works, 3d rendering, constructional 3d modelling with drawings (SolidWorks), molding tool modelling, product samples on demand ( depending on a product). "
