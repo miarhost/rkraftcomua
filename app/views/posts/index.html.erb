@@ -12,12 +12,11 @@
             </div>
           </div>
         </div>
-        <!-- *** PROMO BAR END ***-->
+        <!-- *** Blog header with shot end ***-->
         <div class="container">
         </div>
           <!--
-          *** BLOG HOMEPAGE ***
-          _________________________________________________________
+         blog first 2 article column appearance
           -->
           
           <div id="blog-homepage" class="row">
@@ -54,10 +53,12 @@
 </tr>
 </thead>
 <tbody>
-<% @sliced = @posts.to_a %>
-<% @sliced.shift(2) %>
-	<tr class="post_list">
-<% @sliced.each do |post| %>
+ <!-- blog rest of articles table appearance -->
+<% @posts.sort_by %>
+<% @s = @posts.to_a %>
+<% @s.shift(2) %>
+<tr class="post_list">
+<% @s.each do |post| %>
 <td class="post_title"><%=link_to post.title, post_path(post) %></td>
 <td class="post_body"><%= truncate(strip_tags(post.body), length: 100) %></td>
 <td class="post_actions"><%= post.created_at %></td>
@@ -68,6 +69,4 @@
 </tbody>
 </table>
 </div>
-
-     
-  </div>
+</div>
