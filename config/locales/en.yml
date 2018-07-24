@@ -361,10 +361,17 @@ en:
   
   posts:
     index: 
-      title: "Our blog"   
+      title: "Our blog" 
+      texts: "Interesting on production"  
       name: "Title"   
       topic: "Topic"
       created: "Created at"
+      blog1: "Plastic Clamshells"
+      blog2: "Thermoforming Process"
+      2products: "To catalog"
+      blog1text: "Every thermoforming project starts out with a design. Usually, thermoformed plastic is used as a part of a larger product. Often (though certainly not always), it’s the outer protective and aesthetic covering for a piece of equipment. Whatever it’s being used for, most thermoformed products start out as a CAD model... "
+      blog2text: "Thermoformed plastic clamshells are rigid plastic containers that showcase and protect consumer product goods at retail. ..."
+      tabletitle: "Other posts"
     show:
       admin: "Login as admin to make changes"
       delete: "Delete"

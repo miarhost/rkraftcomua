@@ -1,5 +1,49 @@
 <div class="center jumbotron">
-<h1 class="text-uppercase"><strong><%= t('.title') %></strong></h1>
+        <div class="bar background-image-fixed-1 no-mb color-white text-center">
+          <div class="dark-mask"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="icon"><i class="fa fa-file-code-o"></i></div>
+                <h1><%= t('.title') %></h1>
+                <p class="lead"><%= t('.texts') %></p>
+                <p class="text-center"><a href="<%= gallery_path %>" class="btn btn-outline-white-primary"><%= t('.2products') %></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** PROMO BAR END ***-->
+        <div class="container">
+        </div>
+          <!--
+          *** BLOG HOMEPAGE ***
+          _________________________________________________________
+          -->
+          
+          <div id="blog-homepage" class="row">
+            <div class="col-sm-6">
+              <div class="post">
+                <h4><a href="#"><%= t('.blog1') %></a></h4>
+                <p class="author-category">For <a href="#"><%= t('layouts.application.catalog') %></a> in <a href="">Our style</a></p>
+                <hr>
+                <p class="intro"><%= t('.blog1text') %></p>
+                <p class="read-more"><a href="<%= post_path(1) %>" class="btn btn-outline-primary"><%= t('.read') %></a></p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="post">
+                <h4><a href="#"><%= t('.blog2') %></a></h4>
+                <p class="author-category">For <a href="<%= clamshells_path %>"><%= t('layouts.application.clamshells') %></a> in <a href="">About Us</a></p>
+                <hr>
+                <p class="intro"><%= t('.blog2text') %></p>
+                <p class="read-more"><a href="<%= post_path(2) %>" class="btn btn-outline-primary"><%= t('.read') %></a></p>
+              </div>
+            </div>
+          </div>
+
+
+  <!-- end of header parts -->
+<h1 class="text-uppercase"><strong><%= t('.tabletitle') %></strong></h1>
 <table width="100%" border="0" cellspaceing="0" cellpadding="0">
  <thead style= "background-color: #ced4da">
  <tr class="post_title">
@@ -10,8 +54,10 @@
 </tr>
 </thead>
 <tbody>
+<% @sliced = @posts.to_a %>
+<% @sliced.shift(2) %>
 	<tr class="post_list">
-<% @posts.each do |post| %>
+<% @sliced.each do |post| %>
 <td class="post_title"><%=link_to post.title, post_path(post) %></td>
 <td class="post_body"><%= truncate(strip_tags(post.body), length: 100) %></td>
 <td class="post_actions"><%= post.created_at %></td>
@@ -22,3 +68,6 @@
 </tbody>
 </table>
 </div>
+
+     
+  </div>
