@@ -282,7 +282,7 @@ $(document).ready(function(){
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'cosmetics.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-7" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
@@ -382,6 +382,11 @@ $(document).ready(function(){
           <div id="product-quick-view-modal-6" tabindex="-1" 
            role="dialog" aria-hidden="false" class="modal fade">
            <%= render 'modal7' %>
+          </div>
+          <!-- /.modal-dialog -->
+          <div id="product-quick-view-modal-7" tabindex="-1" 
+           role="dialog" aria-hidden="false" class="modal fade">
+           <%= render 'modal8' %>
           </div>
           <!-- /.products-->
         </div>
