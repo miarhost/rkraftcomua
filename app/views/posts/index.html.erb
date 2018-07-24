@@ -54,8 +54,7 @@
 </thead>
 <tbody>
  <!-- blog rest of articles table appearance -->
-<% @posts.sort %>
-<% @s = @posts.to_a %>
+<% @s = @posts.to_a.sort! %>
 <% @s.shift(2) %>
 <tr class="post_list">
 <% @s.each do |post| %>
