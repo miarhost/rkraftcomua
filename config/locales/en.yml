@@ -186,8 +186,11 @@ en:
       popup_text7: "Acrylic dispensers have several sections for different size products and place for branding sticker or loose leaf. Horisontally organized displays for different kinds of products in one item show a lineage of brand products chosen to be presented in a shop. Precisely made dividers for each item let your products be well shown on a shelf and easily taken by customer or seller one by one.  We can brand them by sticker, printing on plastic or even thermoformed logo with printing, or LED lighting. Materials can be chosen for each model, depending on demanded clearance, color cast, strength and thickness."
     services:
       s_title: "Services" 
-      p_text: "We supply our customers with graphic design including preprinting works, 3d rendering, constructional 3d modelling with drawings (SolidWorks), molding tool modelling, product samples on demand ( depending on a product). "
-    
+      p_text0: "We supply "
+      p_text: "our customers with graphic design including preprinting works, 3d rendering, constructional 3d modelling with drawings (SolidWorks), molding tool modelling, product samples on demand ( depending on a product). "
+      carousel1: "3dmodel"
+      carousel2: "Drawing"
+      carousel3: "Visualization"
     catalog:
       ctitle: "Main catalog"
       csubtitle: "General products list"
