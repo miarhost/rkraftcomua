@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/racks', to: 'main#racks'
   get '/mold', to: 'main#mold'
   get '/moldshell', to: 'main#moldshell'
+  get '/blinks', to: 'main#blinks'
   
   resources :products do
      get :who_bought, on: :member

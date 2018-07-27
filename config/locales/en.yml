@@ -311,7 +311,14 @@ en:
       2cprice: "$3"
       3price: "$2.55"
       4price: "$3"
-  
+
+    blinks: 
+      title: "Lighting products"
+      text: "LED products: lighting shelftalkers, stands, lightboxes"
+      body: "LED elements are used in addition to other constructions or standalone lighting products, always bright and unique"
+      lightstand: "Light stand"
+      1price:  "$3.80"
+
   users:
     registrations:
       edit:
