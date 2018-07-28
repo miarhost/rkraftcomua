@@ -191,6 +191,8 @@ en:
       carousel1: "3dmodel"
       carousel2: "Drawing"
       carousel3: "Visualization"
+      support: "We provide full document assistance service, consulting and product delivery support for our customers"
+    
     catalog:
       ctitle: "Main catalog"
       csubtitle: "General products list"
@@ -316,8 +318,17 @@ en:
       title: "Lighting products"
       text: "LED products: lighting shelftalkers, stands, lightboxes"
       body: "LED elements are used in addition to other constructions or standalone lighting products, always bright and unique"
+      custom: "Custom "
+      light: "lighting products"
       lightstand: "Light stand"
+      lightbox: "Lightbox"
+      model: "Lighting model"
+      stand: "Product stand with lighting"
       1price:  "$3.80"
+      2price: "$95.60"
+      2cprice: "$87.95"
+      3price: "$2.50"
+      4price: "$4.80"
 
   users:
     registrations:

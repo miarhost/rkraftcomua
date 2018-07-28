@@ -1,4 +1,6 @@
-
+  <!DOCTYPE html>
+<html>
+  <body>
 <div class="center-jumbotron">
 
 <div class="box text-center">
@@ -9,11 +11,14 @@
   <style>
   .carousel-inner > .carousel-item > img,
   .carousel-inner > .carousel-item > a > img {
-      width: 70%;
+        width: 35%;
+      height: 50%;
+
       margin: auto;
   }
   </style>
-    <div id="carousel2" class="carousel slide" data-ride="carousel">
+
+  <div id="carousel2" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#carousel2" data-slide-to="0" class="active"></li>
@@ -24,21 +29,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<%= asset_path 'service1.jpg' %>" alt="3dmodel">
+      <img src="<%= asset_path 'service1.JPG' %>" alt="3dmodel">
       <div class="carousel-caption">
         <h3><%= t('.carousel1') %></h3>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="<%= asset_path 'service2.jpg' %>" alt="drawing">
+      <img src="<%= asset_path 'service2.JPG' %>" alt="drawing">
       <div class="carousel-caption">
         <h3><%= t('.carousel2') %></h3>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="<%= asset_path 'service3.jpg' %>" alt="visualization">
+      <img src="<%= asset_path 'service3.JPG' %>" alt="visualization">
       <div class="carousel-caption">
         <h3><%= t('.carousel3') %></h3>
       </div>
@@ -80,4 +85,7 @@ $(document).ready(function(){
 });
 </script>
 
+<p><%= t('.support') %></p>
 </div>
+</body>
+</html>

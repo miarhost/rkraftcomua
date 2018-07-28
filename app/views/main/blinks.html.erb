@@ -1,5 +1,4 @@
 
-
    <div class="bar background-image-fixed-5 no-mb color-white text-center">
           <div class="dark-mask"></div>
           <div class="container">
@@ -19,7 +18,7 @@
 <div class="col-sm-6">
               <div class="post">
                 <h4><a href="#"><%= t('.title') %></a></h4>
-                <p class="author-category">Custom <a href="#">Plastic Packaging</a> in <a href="">About Us</a></p>
+                <p class="author-category"><%= t('.custom') %><a href="#"><%= t('.light') %></a> in <a href="">About Us</a></p>
                 <hr>
                 <p class="intro"><%= t('.body') %></p>
                 <p class="read-more"><a href="<%= products_path %>" class="btn btn-outline-primary"><%= t('main.racks.goproducts') %></a></p>
@@ -44,13 +43,13 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path '2kcl.jpg' %>" alt="" class="img-fluid image1"></a>
+                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'lightbox.jpg' %>" alt="" class="img-fluid image1"></a>
                   <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html"><%= t('.2component') %></a></h3>
+                  <h3><a href="detail.html"><%= t('.lightbox') %></a></h3>
                   <p class="price">
                     <del><%= t('.2price') %></del><%= t('.2cprice') %>
                   </p>
@@ -71,12 +70,12 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid image1"></a>
+                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'mock.png' %>" alt="" class="img-fluid image1"></a>
                   <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html"><%= t('.lb') %></a></h3>
+                  <h3><a href="detail.html"><%= t('.model') %></a></h3>
                   <p class="price"><%= t('.3price') %></p>
                 </div>
                 <!-- /.text-->
@@ -85,96 +84,19 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'blp.png' %>" alt="" class="img-fluid image1"></a>
+                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'ob.JPG' %>" alt="" class="img-fluid image1"></a>
                   <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html"><%= t('.bp') %></a></h3>
+                  <h3><a href="detail.html"><%= t('.stand') %></a></h3>
                   <p class="price"><%= t('.4price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
               <!-- /.product-->
             </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box5.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="detail.html"><%= t('.sb') %></a></h3>
-                  <p class="price">
-                    <del><%= t('.5price') %></del><%= t('.5cprice') %>
-                  </p>
-                </div>
-                <!-- /.text-->
-                <div class="ribbon sale">
-                  <div class="theribbon">SALE</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.ribbon-->
-                <div class="ribbon new">
-                  <div class="theribbon">NEW</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.ribbon-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="detail.html"><%= t('.shb') %></a></h3>
-                  <p class="price"><%= t('.1price') %></p>
-                </div>
-                <!-- /.text-->
-                <div class="ribbon new">
-                  <div class="theribbon">NEW</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.ribbon-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'sauce.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="<%= products_path %>"><%= t('.sauce') %></a></h3>
-                  <p class="price"><%= t('.6price') %></p>
-                </div>
-                <!-- /.text-->
-                <div class="ribbon new">
-                  <div class="theribbon">NEW</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.ribbon-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'cosmetics.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
-                </div>
-                <!-- /.image-->
-                <div class="text">
-                  <h3><a href="detail.html"><%= t('.tray') %></a></h3>
-                  <p class="price"><%= t('.7price') %></p>
-                </div>
-                <!-- /.text-->
-              </div>
-              <!-- /.product-->
-            </div>
+           
             <!-- /.col-md-4-->
             <div id="product-quick-view-modal" tabindex="-1" role="dialog" aria-hidden="false" class="modal fade">
               <div class="modal-dialog modal-lg">
@@ -230,3 +152,4 @@
     <%= yield %>
   </div>
 </footer>
+
