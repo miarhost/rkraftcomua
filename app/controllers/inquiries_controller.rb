@@ -27,6 +27,6 @@ class InquiriesController < ApplicationController
   #end
 
   def inquiry_params
-    params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message, :image, :image_cache)
+    params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message, {images: []})
   end
 end

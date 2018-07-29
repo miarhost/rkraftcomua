@@ -5,6 +5,7 @@ class Inquiry < ApplicationRecord
           format: {with: VALID_EMAIL_REGEX }
     validates :message,
           presence: :true      
-    mount_uploader :image, ImageUploader  
+    mount_uploader :images, ImageUploader  
+    #serialize :images, JSON
 
  end
