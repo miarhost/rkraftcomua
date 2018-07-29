@@ -105,7 +105,7 @@
                     <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
                     <div class="row quick-view product-main">
                       <div class="col-sm-6">
-                        <div class="quick-view-main-image"><img src="<%= asset_path 'suchibox_small.jpg' %>" alt="" class="img-fluid"></div>
+                        <div class="quick-view-main-image"><img src="<%= asset_path 'lightstand.jpg' %>" alt="" class="img-fluid"></div>
                         <div class="ribbon ribbon-quick-view sale">
                           <div class="theribbon">SALE</div>
                           <div class="ribbon-background"></div>
@@ -117,29 +117,29 @@
                         </div>
                         <!-- /.ribbon-->
                         <div class="row thumbs">
-                          <div class="col-4"><a href="<%= asset_path 'box5.jpg' %>" class="thumb"><img src="<%= asset_path 'box5.jpg' %>"" alt="" class="img-fluid"></a></div>
+                          <div class="col-4"><a href="<%= asset_path 'lightstand.gif' %>" class="thumb"><img src="<%= asset_path 'lightstand.gif' %>"" alt="" class="img-fluid"></a></div>
                           <div class="col-4"><a href="<%= asset_path 'box1.jpg' %>" class="thumb"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid"></a></div>
                           <div class="col-4"><a href="<%= asset_path 'suchiboxx.jpg' %>" class="thumb"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid"></a></div>
                         </div>
                       </div>
                       <div class="col-sm-6">
-                        <h2><%= t('main.home.popup') %></h2>
-                        <p class="text-muted text-small text-center"><%= t('main.home.popup_text') %></p>
+                        <h2><%= t('.lightstand') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('.lightstand_text') %></p>
                         <div class="box">
                           <form>
                             <div class="sizes">
                               <h3>Available sizes</h3>
-                              <label for="size_s"><a href="#">300*800</a>
+                              <label for="size_s"><a href="#">150*650</a>
                                 <input id="size_s" type="radio" name="size" value="s" class="size-input">
                               </label>
-                              <label for="size_m"><a href="#">1200*1200</a>
+                              <label for="size_m"><a href="#">200*300</a>
                                 <input id="size_m" type="radio" name="size" value="m" class="size-input">
                               </label>
                               <label for="size_l"><a href="#">610*750</a>
                                 <input id="size_l" type="radio" name="size" value="l" class="size-input">
                               </label>
                             </div>
-                            <p class="price">$0.44</p>
+                            <p class="price"><%= t('.1price') %></p>
                             <p class="text-center">
                               <button type="submit" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i> Add to cart</button>
                               <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-outline-secondary"><i class="fa fa-heart-o"></i></button>
