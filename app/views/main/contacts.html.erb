@@ -82,8 +82,8 @@
                 <div class="col-sm-12">
 
                     <label for="image">Place your images here</label>
-                    <%= f.file_field :image, placeholder: 'Place your products, sizing images here' %>
-                    <%= f.hidden_field :image_cache %>
+                    <%= f.file_field :images, placeholder: 'Place your products, sizing images here', multiple: true %>
+                    
                 </div>
                 <div class="col-sm-12">
                    <div class="form-group">
