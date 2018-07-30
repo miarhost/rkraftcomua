@@ -325,6 +325,8 @@ en:
       model: "Lighting model"
       stand: "Product stand with lighting"
       lightstand_text: "Simple plastic stand for bottles with white led lights makes bottles shine one by one on assembly program"
+      lb_text: "500*600*30 on-floor lightbox with led lighting inside, covered with oracal film imaging "
+      model_text: "Product or packaging model with lightened element, often logo"
       1price:  "$3.80"
       2price: "$95.60"
       2cprice: "$87.95"
