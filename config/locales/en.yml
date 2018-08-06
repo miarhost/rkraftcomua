@@ -222,9 +222,20 @@ en:
 
     acryllic:
       atitle: " Acryllic stands"
+      atext: "Stands for products, displays, made of acryl, PET, PVC, HIPS with  laser or milling cutting, thermobending and gluing"
       shelves: "Acryllic displays of 2-3 shelves"
       cosmetics: "Acryllic stand for cosmetics"
       booklets: "Stands for booklets"
+      article: "Acrylic dispensers have several sections for different size products and place for branding sticker. Horisontally organized displays for different kinds of products in one item show a lineage of brand products chosen to be presented in a shop. Precisely made dividers for each item let your products be well shown on a shelf and easily taken by customer or seller one by one.  We can brand them by sticker, printing on plastic or even thermoformed logo with printing, or LED lighting. Materials can be chosen for each model, depending on demanded clearance, color cast, strength and thickness."
+      adescr: "Plastic displays, stands, shelf-organizers"
+      acryl: "Vertical acryllic display "
+      acryltext: "2-3 shelves with vertical dividers, side- and upper-branded"
+      horizontal: "Horizontal acryllic display"
+      cosmetics_text: "Acryllic stands with slots for products"
+      1price: "$7.20"
+      1cprice: "$7.50"
+      2price: "$3.60"
+      3price: "$2.50"
 
     gallery:
       gtitle: "Examples of products made for customers"
