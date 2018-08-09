@@ -293,6 +293,15 @@ en:
       mdispl: "Molded shelf display"
       2item: "Molded 2 item small product stand"
       dispenser: "Molded dispenser"
+      racktext: "Metal racks of wire and square pipe branded with plastic sheets with printing"
+      shelvestext: "Metal shelves for heavy products made of metal sheet"
+      wiretext: "Wire on-table stands for small products"
+      sheadertext: "Wire branded header for putting on shelf, adding space for products"
+      1price: "$71"
+      2price: "$17"
+      2cprice: "$16.68"
+      3price: "$2.74"
+      4price: "$1.9"
 
     clamshells:
       ctitle: "Clamshells"
