@@ -9,8 +9,7 @@ self.queue_adapter = :sidekiq
     if Rails.env.production? 
      image = @post.image 
      image.enqueue wait: 24.minutes 
-     next
-  	rescue ActiveRecord::RecordNotFound
+
     end
   end 
 
