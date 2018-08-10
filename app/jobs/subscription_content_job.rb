@@ -1,7 +1,7 @@
 class SubscriptionContentJob < ApplicationJob
 self.queue_adapter = :sidekiq
   queue_as :low_priority
- sidekiq_options retry: 5
+
 
 
   def perform(image)
