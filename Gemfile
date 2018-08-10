@@ -11,7 +11,7 @@ gem 'bootstrap', '4.0.0'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'activemerchant', '~> 1.78'
 gem 'devise'
-
+gem 'sidekiq', '~> 5.1', '>= 5.1.3'
 gem 'puma', '~> 3.7'
 
 gem 'sass-rails', '~> 5.0'
@@ -39,9 +39,8 @@ gem 'globalize', '~> 5.1.0'
 
 group :development, :test do
   gem 'sqlite3'
-  
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
+  gem 'redis', '~> 4.0', '>= 4.0.1'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'foreman'
