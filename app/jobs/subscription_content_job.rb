@@ -5,7 +5,7 @@ self.queue_adapter = :sidekiq
  around_perform :around_delivering
 
   def perform(subscription_mailer)
-  	rescue_from(ActiveRecord::RecordNotFound) do |exception|
+  	rescue ActiveRecord::RecordNotFound
      raise 'no content available'
    end
 
