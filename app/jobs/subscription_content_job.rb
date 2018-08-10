@@ -14,7 +14,7 @@ self.queue_adapter = :sidekiq
   private
 
   def around_delivering(job)
-   retry: 5
+   retry 5
   end
 
 end
