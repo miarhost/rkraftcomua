@@ -14,7 +14,7 @@ self.queue_adapter = :sidekiq
   private
 
   def around_delivering(job)
-   attempt_retry {  queue: ENV["S3_BUCKET"], wait: 5.minutes } 
+   job.enqueue  queue: ENV["S3_BUCKET"], wait: 5.minutes  
   end
 
 end
