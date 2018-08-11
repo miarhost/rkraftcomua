@@ -298,6 +298,9 @@ en:
       wiretext: "Wire on-table stands for small products"
       sheadertext: "Wire branded header for putting on shelf, adding space for products"
       racktext: "Branded metal racks on customer's design"
+      hooktext: "Wire header with hooks for product clamshells"
+      meshtext: "Stand of brushed steel mesh for placing products on hooks"
+      mdisptext: "Wired header/product dispencer for big boxes or bottles"
       1price: "$71"
       2price: "$17"
       2cprice: "$16.68"
@@ -305,6 +308,9 @@ en:
       4price: "$1.9"
       5price: "$95"
       5cprice: "$92"
+      6price: "$2.50"
+      7price: "$23.50"
+      8price: "$6.47"
 
     clamshells:
       ctitle: "Clamshells"

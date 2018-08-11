@@ -144,13 +144,13 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'racks_stand.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
+                <div class="image"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-6"><img src="<%= asset_path 'racks_stand.jpg' %>" alt="" class="img-fluid image1"></a>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-6" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="<%= products_path %>"><%= t('.mesh') %></a></h3>
-                  <p class="price">$23.53</p>
+                  <h3><a href="<%= catalog_path %>"><%= t('.mesh') %></a></h3>
+                  <p class="price"><%= t('.7price') %></p>
                 </div>
                 <!-- /.text-->
                 <div class="ribbon new">
@@ -163,13 +163,13 @@
             </div>
             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'dispenser.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
+                <div class="image"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-7"><img src="<%= asset_path 'dispenser.jpg' %>" alt="" class="img-fluid image1"></a>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-7" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html"><%= t('.mdispenser') %></a></h3>
-                  <p class="price">$6.47</p>
+                  <h3><a href="<%= catalog_path %>"><%= t('.mdispenser') %></a></h3>
+                  <p class="price"><%= t('.8price') %></p>
                 </div>
                 <!-- /.text-->
               </div>
@@ -482,14 +482,14 @@
                           <form>
                             <div class="sizes">
                               <h3><%= t('main.home.sizes') %></h3>
-                              <label for="size_s"><a href="#">1900*500*600</a>
+                              <label for="size_s"><a href="#">350*150</a>
                                 <input id="size_s" type="radio" name="size" value="s" class="size-input">
                               </label>
-                              <label for="size_m"><a href="#">1225*450*450</a>
+                              <label for="size_m"><a href="#">350*70</a>
                                 <input id="size_m" type="radio" name="size" value="m" class="size-input">
                               </label>
                         </div>
-                            <p class="price"><%= t('.5cprice') %></p>
+                            <p class="price"><%= t('.6price') %></p>
                      <p class="text-center"><a href="<%= catalog_path %>" class="btn btn-outline-primary"><%= t('products.index.add_html') %></a></p>
                           </form>
                         </div>
@@ -506,6 +506,114 @@
             </div>
           </div>
           <!-- end of modal dialog-5 -->
+          <div id="product-quick-view-modal-6" tabindex="-1" role="dialog" aria-hidden="false" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                    <div class="row quick-view product-main">
+                      <div class="col-sm-6">
+                        <div class="quick-view-main-image"><img src="<%= asset_path 'racks_stand.jpg' %>" alt="" class="img-fluid"></div>
+                        <div class="ribbon ribbon-quick-view sale">
+                          <div class="theribbon">SALE</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="ribbon ribbon-quick-view new">
+                          <div class="theribbon">NEW</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="row thumbs">
+                          <div class="col-4"><a href="<%= asset_path 'racks_stand.jpg' %>" class="thumb"><img src="<%= asset_path 'racks_stand.jpg' %>" alt="" class="img-fluid"></a></div>
+                            <div class="col-4"><a href="<%= asset_path '9.jpg' %>" class="thumb"><img src="<%= asset_path '9.jpg' %>" alt="" class="img-fluid"></a></div>
+                         </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2><%= t('.mesh') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('.meshtext') %></p>
+                        <div class="box">
+                          <form>
+                            <div class="sizes">
+                              <h3><%= t('main.home.sizes') %></h3>
+                              <label for="size_s"><a href="#">1200*650</a>
+                                <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                              </label>
+                              <label for="size_m"><a href="#">1870*500</a>
+                                <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                              </label>
+                        </div>
+                            <p class="price"><%= t('.6price') %></p>
+                     <p class="text-center"><a href="<%= catalog_path %>" class="btn btn-outline-primary"><%= t('products.index.add_html') %></a></p>
+                          </form>
+                        </div>
+                        <!-- /.box-->
+                        <div class="quick-view-social">
+                          <h4><%= t('main.home.friends') %></h4>
+                          <p><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of modal dialog-6 -->
+          <div id="product-quick-view-modal-7" tabindex="-1" role="dialog" aria-hidden="false" class="modal fade">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                    <div class="row quick-view product-main">
+                      <div class="col-sm-6">
+                        <div class="quick-view-main-image"><img src="<%= asset_path 'dispenser.jpg' %>" alt="" class="img-fluid"></div>
+                        <div class="ribbon ribbon-quick-view sale">
+                          <div class="theribbon">SALE</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="ribbon ribbon-quick-view new">
+                          <div class="theribbon">NEW</div>
+                          <div class="ribbon-background"></div>
+                        </div>
+                        <!-- /.ribbon-->
+                        <div class="row thumbs">
+                          <div class="col-4"><a href="<%= asset_path 'dispenser.jpg' %>" class="thumb"><img src="<%= asset_path 'dispenser.jpg' %>" alt="" class="img-fluid"></a></div>
+                            <div class="col-4"><a href="<%= asset_path 'dspr2.jpg' %>" class="thumb"><img src="<%= asset_path 'dspr2.jpg' %>" alt="" class="img-fluid"></a></div>
+                         </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <h2><%= t('.mdispenser') %></h2>
+                        <p class="text-muted text-small text-center"><%= t('.mdisptext') %></p>
+                        <div class="box">
+                          <form>
+                            <div class="sizes">
+                              <h3><%= t('main.home.sizes') %></h3>
+                              <label for="size_s"><a href="#">350*250*550</a>
+                                <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                              </label>
+                              <label for="size_m"><a href="#">250*250*400</a>
+                                <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                              </label>
+                        </div>
+                            <p class="price"><%= t('.8price') %></p>
+                     <p class="text-center"><a href="<%= catalog_path %>" class="btn btn-outline-primary"><%= t('products.index.add_html') %></a></p>
+                          </form>
+                        </div>
+                        <!-- /.box-->
+                        <div class="quick-view-social">
+                          <h4><%= t('main.home.friends') %></h4>
+                          <p><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of modal dialog-7 -->
   <div class="container">
     <footer class='<% controller.controller_name %>'>
     <%= yield %>
