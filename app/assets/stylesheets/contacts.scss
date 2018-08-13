@@ -1,0 +1,51 @@
+.form-header {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.form-sub-header {
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.forms {
+	padding: 0 5%;
+}
+label {
+	color: #333;
+}
+input[type="text"],[type="email"] textarea {
+	width: 100%;
+	margin: .5em 2% 1em 0;
+	display: inline-block;
+	outline: none;
+	background: rgba(250,250,250,.4);
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	padding: 1em 2em;
+}
+textarea {
+	height: 200px;
+}
+button[type="submit"] {
+	background: white;
+	outline: none;
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	width: 25%;
+	display: inline-block;
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+	color: #333;
+	&:hover {
+		background: #333;
+		color: white;
+	}
+}
+::-webkit-input-placeholder { color: #333; }
