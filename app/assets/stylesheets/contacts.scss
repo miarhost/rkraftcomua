@@ -38,7 +38,7 @@ button[type="submit"] {
 	border: none;
 	height: 40px;
 	border-radius: 4px;
-	width: 25%;
+	
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
@@ -48,4 +48,5 @@ button[type="submit"] {
 		color: white;
 	}
 }
+
 ::-webkit-input-placeholder { color: #333; }
