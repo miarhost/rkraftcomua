@@ -246,12 +246,17 @@ en:
       find: "Find your solution"
       design: " for design"
       zview: "View"
+      size: "Size:"
       infostands: "Info/products stands"
       suchibox: "Suchi-box"
       lightbox: "Lightbox"
       moldtray: "Molded tray"
       metalrack: "Metal rack"
-
+      quantities: "Quantities in production: "
+      infostands_text: "Plastic and combined stands are required for exhibitions, events and customers' attraction. This was made for art gallery"
+      barketa: "Plastic shelf stand"
+      barketa_text: "Plastic shelf stand with printing made of transparent PET inside, covered by printed PVC"
+    
     mold:
       mtitle: "Molded trays, stands, shelftalkers, shelforganizers"
       moldp: "Molded production"

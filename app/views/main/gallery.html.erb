@@ -8,40 +8,35 @@
     </div>
    <%= will_paginate @images, :container => false %> 
   </div>  -->
-                <!-- /.image-->
+           <!-- /.Gallery intro-->
        <div class="box text-center">
             <h3 class="text-uppercase"><%= t('.view') %></h3>
             <h4 class="text-muted"><span class="accent"><%= t('.find') %></span><%= t('.design') %></h4><p><%= t('.gtitle') %></p>
-          </div>
+       </div>
+               <!-- /.image items-->
           <div class="row products">
-            <div class="col-md-3 col-sm-4">
+             <div class="col-md-3 col-sm-4">
               <div class="product">
-                <div class="image"><a href="<%= gallery_path %>"><img src="<%= asset_path 'title.png' %>" alt="Rkraft" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#" class="btn btn-outline-white-secondary btn-sm"><%= t('.zview') %></a></div>
+                <div class="image"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal"><img src="<%= asset_path 'composed_stands.jpg' %>" alt="" class="img-fluid image1"></a>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
-                <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#"><%= t('main.home.popup') %></a></h3>
-                  <p class="price"></p>
+                  <h3><a href="<%= catalog_path %>"><%= t('.infostands') %></a></h3>
                 </div>
-                <!-- /.text-->
               </div>
-              <!-- /.product-->
-            </div>
-            <div class="col-md-3 col-sm-4">
-              <div class="product">
-                <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'composed_stands.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.zview') %></a></div>
+         </div>
+               <!-- /.image item-->
+              <div class="col-md-3 col-sm-4">
+               <div class="product">
+                <div class="image"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-1"><img src="<%= asset_path 'barketa.jpg' %>" alt="" class="img-fluid image1"></a>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal-1" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
-
-                <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html"><%= t('.infostands') %></a></h3>
-                                 </div>
-              
-              </div>
-              <!-- /.product-->
+                  <h3><a href="<%= catalog_path %>"><%= t('.barketa') %></a></h3>
+                </div>
             </div>
+         </div>
+                 
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalker.jpg' %>" alt="" class="img-fluid image1"></a>
@@ -133,51 +128,108 @@
               <!-- /.product-->
             </div>
             <!-- /.col-md-4-->
-            <div id="product-quick-view-modal" tabindex="-1" role="dialog" aria-hidden="false" class="modal fade">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
-                    <div class="row quick-view product-main">
-                      <div class="col-sm-6">
-                        <div class="quick-view-main-image"><img src="img/detailbig1.jpg" alt="" class="img-fluid"></div>
-                        <div class="ribbon ribbon-quick-view sale">
-                          <div class="theribbon">SALE</div>
-                          <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="ribbon ribbon-quick-view new">
-                          <div class="theribbon">NEW</div>
-                          <div class="ribbon-background"></div>
-                        </div>
-                        <!-- /.ribbon-->
-                        <div class="row thumbs">
-                          <div class="col-4"><a href="<%= asset_path 'box5.jpg' %>" class="thumb"><img src="<%= asset_path 'box5.jpg' %>"" alt="" class="img-fluid"></a></div>
-                          <div class="col-4"><a href="<%= asset_path 'box1.jpg' %>" class="thumb"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid"></a></div>
-                          <div class="col-4"><a href="<%= asset_path 'suchiboxx.jpg' %>" class="thumb"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid"></a></div>
-                        </div>
+           
+           <!-- modal dialog --> 
+          <div id="product-quick-view-modal" tabindex="-1" 
+           role="dialog" aria-hidden="false" class="modal fade">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                  <div class="row quick-view product-main">
+                    <div class="col-sm-6">
+                      <div class="row thumbs">
+                        <div class="quick-view-main-image"><a href="<%= asset_path 'composed_stands.jpg' %>" class="thumb"><img src="<%= asset_path 'composed_stands.jpg' %>"" alt="" class="img-fluid"></a></div>
                       </div>
-                      <div class="col-sm-6">
-                        <h2>Lunch  box / Suchi box / Salad-box</h2>
-                        <p class="text-muted text-small text-center">Lunch box has durable and fit bottom (black) and cover (transparent), made of quality PET. Product is good for posing and shelving foods at shops, or for food delivery companies, restaurant networks. Product is made for demand, it is unique, fitting customers' sizes and design, may have logo on cover. Lunch box has durable and fit bottom (black) and cover (transparent), made of high quality PET. </p>
-                        <div class="box">
-                          <form>
-                            <div class="sizes">
-                              <h3>Available sizes</h3>
-                              <label for="size_s"><a href="#">300*800</a>
-                                <input id="size_s" type="radio" name="size" value="s" class="size-input">
-                              </label>
-                              <label for="size_m"><a href="#">1200*1200</a>
-                                <input id="size_m" type="radio" name="size" value="m" class="size-input">
-                              </label>
-                              <label for="size_l"><a href="#">610*750</a>
-                                <input id="size_l" type="radio" name="size" value="l" class="size-input">
-                              </label>
-                            </div>
-                            <p class="price">$0.44</p>
-                            <p class="text-center">
-                              <button type="submit" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                              <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-outline-secondary"><i class="fa fa-heart-o"></i></button>
-                            </p>
-                          </form>
-                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <h2><%= t('.infostands') %></h2>
+                      <p class="text-muted text-small text-center"><%= t('.infostands_text') %></p>
+                      <div class="box">
+                        <form>
+                          <div class="sizes">
+                            <h3><%= t('.size') %></h3>
+                            <label for="size_s"><a href="#">1200*450</a>
+                              <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                            </label>
+
+                          </div>
+                  
+                        </form>
+                      </div>
+                      <!-- /.box-->
+                      <div class="quick-view-social">
+                        <h4><%= t('.quantities') %></h4>
+                         <form>
+                          <div class="sizes">
+                            <label for="size_s"><a href="#">100</a>
+                              <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                            </label>
+                            <label for="size_m"><a href="#">200</a>
+                              <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                            </label>
+                            <label for="size_l"><a href="#">500</a>
+                              <input id="size_l" type="radio" name="size" value="l" class="size-input">
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- /.modal-dialog-->
+         
+          <div id="product-quick-view-modal-1" tabindex="-1" 
+           role="dialog" aria-hidden="false" class="modal fade">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                  <div class="row quick-view product-main">
+                    <div class="col-sm-6">
+                      <div class="row thumbs">
+                        <div class="quick-view-main-image"><a href="<%= asset_path 'barketa.jpg' %>" class="thumb"><img src="<%= asset_path 'barketa.jpg' %>"" alt="" class="img-fluid"></a></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <h2><%= t('.barketa') %></h2>
+                      <p class="text-muted text-small text-center"><%= t('.barketa_text') %></p>
+                      <div class="box">
+                        <form>
+                          <div class="sizes">
+                            <h3><%= t('.size') %></h3>
+                            <label for="size_s"><a href="#">450*320*210</a>
+                              <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                            </label>
+
+                          </div>
+                  
+                        </form>
+                      </div>
+                      <!-- /.box-->
+                      <div class="quick-view-social">
+                        <h4><%= t('.quantities') %></h4>
+                         <form>
+                          <div class="sizes">
+                            <label for="size_s"><a href="#">200</a>
+                              <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                            </label>
+                            <label for="size_m"><a href="#">200</a>
+                              <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                            </label>
+                            <label for="size_l"><a href="#">1000</a>
+                              <input id="size_l" type="radio" name="size" value="l" class="size-input">
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- /.modal-dialog 1-->
