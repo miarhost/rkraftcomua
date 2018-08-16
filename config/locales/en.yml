@@ -256,7 +256,12 @@ en:
       infostands_text: "Plastic and combined stands are required for exhibitions, events and customers' attraction. This was made for art gallery"
       barketa: "Plastic shelf stand"
       barketa_text: "Plastic shelf stand with printing made of transparent PET inside, covered by printed PVC"
-    
+      shelf_text: "Molded shelftalker for placing on a top of coffee shop to highlight a brand"
+      suchitext: "Small one-section suchi box with logo"
+      lighttext: "Box in product packaging form made of pvc with priniting on oracal film with led lighting inside"
+      traytext: "Molded black tray for chocolate"
+      acryltext: "Acrylic display for candies with removable topper"
+      metaltext: "Metal rack with plastic sides and shelves, painted in black"
     mold:
       mtitle: "Molded trays, stands, shelftalkers, shelforganizers"
       moldp: "Molded production"
