@@ -1,11 +1,14 @@
-<h2><%= t('.login') %></h2>
+
+<h2 class="form-header"><%= t('.login') %></h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="form-control">
+<div class="box-simple">
   <div class="field">
     <%= f.label t('users.registrations.new.email') %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
-
+ <div>
   <div class="field">
     <%= f.label t('users.registrations.new.password') %><br />
     <%= f.password_field :password, autocomplete: "off" %>
@@ -29,3 +32,6 @@
 <% end %>
 
 <%= render "users/shared/links" %>
+</div>
+</div>
+<br />
