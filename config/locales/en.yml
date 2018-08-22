@@ -363,6 +363,8 @@ en:
       moldpr: "Molded printing, price"
       molded: "Molded printing, assortment"
       moldstop: "Molded stopper"
+      moldstop_text: "Printed on a molded surface, for assortments or stoppers"
+      molded_text: "Printed assortment on a molded surface with prices"
       1price:  "$2.12"
       2price: "$4"
       2cprice: "$3"
