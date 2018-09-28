@@ -393,6 +393,10 @@ en:
       3price: "$2.50"
       4price: "$4.80"
 
+    accessoires:
+      title: "Accessoires"
+      description: "Small stuff, needed in advertising and sales: signs, tables, micro-stands, simple printed shelftalers, molded clips and clamshells"
+
   users:
     registrations:
       edit:

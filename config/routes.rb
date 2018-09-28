@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/mold', to: 'main#mold'
   get '/moldshell', to: 'main#moldshell'
   get '/blinks', to: 'main#blinks'
+  get '/accessoires', to: 'main#accessoires'
   
   resources :products do
      get :who_bought, on: :member
