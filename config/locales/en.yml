@@ -396,6 +396,12 @@ en:
     accessoires:
       title: "Accessoires"
       description: "Small stuff, needed in advertising and sales: signs, tables, micro-stands, simple printed shelftalers, molded clips and clamshells"
+      tables: "Tables"
+      tables_text: "Opening/closing and informing tables at shops serve as ads placing too, and printing at normal quantities makes it inexpensive"
+      signs: "Signs and small grips"
+      signs_text: "Plastic signs and grips made with laser cutting with printing or engraving"
+      1price: "$0.88"
+      2price: "$0.11"
 
   users:
     registrations:
