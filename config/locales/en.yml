@@ -400,8 +400,11 @@ en:
       tables_text: "Opening/closing and informing tables at shops serve as ads placing too, and printing at normal quantities makes it inexpensive"
       signs: "Signs and small grips"
       signs_text: "Plastic signs and grips made with laser cutting with printing or engraving"
+      micro: "Microstands"
+      micro_text: "Very small stands for one item made of thin plastic"
       1price: "$0.88"
       2price: "$0.11"
+      3price: "$0.15"
 
   users:
     registrations:
