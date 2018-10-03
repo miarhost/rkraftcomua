@@ -26,11 +26,9 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
 gem 'bcrypt', '~> 3.1.7'
 gem 'aws-sdk-s3', '~> 1.9', '>= 1.9.1'
 gem 'fog-aws', '~> 2.0'
-gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'mini_magick'
 gem 'carrierwave', '~> 0.11.2'
 gem 'figaro', '~> 1.1', '>= 1.1.1'

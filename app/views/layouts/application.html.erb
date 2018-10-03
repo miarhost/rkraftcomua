@@ -39,7 +39,7 @@
            <div class="navbar-nav mr-auto">
             <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
               <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><div class="image"><a href="#" data-toggle="modal" data-target="#title-modal-1><img src="<%= asset_path 'title.png' %>" alt="" class="img-fluid image1"></a> 
-                  <class="dropdown-item"><a href="#" data-toggle="modal" data-target="#title-modal-1" class="dropdown-item">Home - intro image</a><a img src="<%= asset_path 'title.png' %>" class="dropdown-item">Home - fullscreen slider </a>
+                  <class="dropdown-item"><a href="#" data-toggle="modal" data-target="#title-modal-1" class="dropdown-item">Home - intro image</a>
             </div></div></class="dropdown-item"></div>
 
             <div class="nav-item dropdown yamm-fw"><a href="<%= 'clamshells' %>" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.menu') %><b class="caret"></b></a>
@@ -130,8 +130,7 @@
                       <h5>Homepage</h5>
                       <ul>
                         <li><a href="<%= home_path %>">Homepage - with slideshow</a></li>
-                        <li><a href="#">Homepage - with intro image</a></li>
-                        <li><a href="#">Homepage - fullscreen slider <span class="badge badge-success">New</span></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#title-modal-1">Homepage - with intro image</a></li>
                       </ul>
                       <h5><%= t('.shops') %></h5>
                       <ul>
@@ -155,13 +154,13 @@
                         <li><a href="<%= posts_path %>"><%= t('.articles') %></a></li>
                         <li><a href="<%= new_post_path %>"><%= t('.post') %></a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">About <span class="badge badge-success">New</span></a></li>
+                        <li><a href="<%= home_path(anchor: 'advantages')%>">About</a></li>
                         <li><a href="<%= contacts_path %>"><%= t('.contacts') %></a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <!-- /.yamm-content-->
+      <!-- dropdowns end -->
               
               </div>
             </div>

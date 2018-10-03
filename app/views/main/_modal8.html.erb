@@ -45,8 +45,20 @@
                       </div>
                       <!-- /.box-->
                       <div class="quick-view-social">
-                        <h4>Show it to your friends</h4>
-                        <p><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+                        <h4><%= t('.quantities') %></h4>
+                         <form>
+                          <div class="sizes">
+                            <label for="size_s"><a href="#">1000</a>
+                              <input id="size_s" type="radio" name="size" value="s" class="size-input">
+                            </label>
+                            <label for="size_m"><a href="#">2000</a>
+                              <input id="size_m" type="radio" name="size" value="m" class="size-input">
+                            </label>
+                            <label for="size_l"><a href="#">5000</a>
+                              <input id="size_l" type="radio" name="size" value="l" class="size-input">
+                            </label>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
