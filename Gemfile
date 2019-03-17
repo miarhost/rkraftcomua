@@ -34,6 +34,7 @@ gem 'carrierwave', '~> 0.11.2'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'geocoder', '~> 1.4', '>= 1.4.9'
 gem 'globalize', '~> 5.1.0'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'

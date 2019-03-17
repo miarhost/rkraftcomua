@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 20180709104403) do
     t.string "second_name"
     t.text "subject"
     t.text "message"
-    t.string "images"
     t.string "image"
   end
 
@@ -67,9 +66,10 @@ ActiveRecord::Schema.define(version: 20180709104403) do
     t.string "name"
     t.text "address"
     t.string "email"
-    t.integer "pay_type"
+    t.string "integer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "pay_type"
   end
 
   create_table "posts", force: :cascade do |t|
