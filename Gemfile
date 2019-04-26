@@ -37,7 +37,7 @@ gem 'globalize', '~> 5.1.0'
 gem 'newrelic_rpm'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.13'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'redis', '~> 4.0', '>= 4.0.1'
   gem 'capybara', '~> 2.13'
